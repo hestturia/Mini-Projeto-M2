@@ -34,13 +34,13 @@ class Registration {
     cadastros.forEach((cadastros, index) => {
       const div = document.createElement('div');
       div.innerHTML = `
-          <p><strong>Name:</strong> ${cadastros.name}</p>
-          <p><strong>Email:</strong> ${cadastros.especie}</p>
-          <p><strong>Email:</strong> ${cadastros.sexo}</p>
-          <p><strong>Email:</strong> ${cadastros.raca}</p>
-          <p><strong>Email:</strong> ${cadastros.idade}</p>
-          <p><strong>Email:</strong> ${cadastros.cor}</p>
-          <p><strong>Email:</strong> ${cadastros.vacinas}</p>
+          <p><strong>Nome:</strong> ${cadastros.name}</p>
+          <p><strong>Espécie:</strong> ${cadastros.especie}</p>
+          <p><strong>Sexo:</strong> ${cadastros.sexo}</p>
+          <p><strong>Raça:</strong> ${cadastros.raca}</p>
+          <p><strong>Idade:</strong> ${cadastros.idade}</p>
+          <p><strong>Cor:</strong> ${cadastros.cor}</p>
+          <p><strong>Vacinas:</strong> ${cadastros.vacinas}</p>
           <button onclick="editRegistration(${index})">Edit</button>
           <button onclick="deleteRegistration(${index})">Delete</button>
       `;
